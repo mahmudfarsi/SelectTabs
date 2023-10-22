@@ -661,3 +661,7 @@ section:nth-child(2n+1){
   text-decoration: none;
   box-sizing: border-box;
 }
+
+html{
+  scroll-behavior: smooth;
+}
