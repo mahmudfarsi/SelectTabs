@@ -2,3 +2,54 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+*{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+@layer components{
+
+}
+@layer utilities{
+  .header{
+    @apply w-full fixed top-0
+  }
+
+  .nav{
+    @apply w-full flex justify-center items-center py-[30px] bg-white
+  }
+
+  .list_items{
+    @apply flex justify-center items-center gap-[50px] px-[10px]
+  }
+
+  .list_items li{
+    @apply pb-[4px]
+  }
+
+  .list_items li a{
+    @apply capitalize font-Mono
+  }
+
+   a.show{
+    @apply  text-cyan-600
+  }
+
+
+  main{
+    @apply max-w-full  h-auto bg-violet-500 flex flex-col justify-center items-center
+  }
+
+
+  section{
+    @apply w-full h-screen flex justify-center items-center font-Mono text-[50px] capitalize text-white
+  }
+
+  section:nth-child(2n+1){
+    @apply bg-slate-500 max-w-full
+  }
+}
