@@ -20,7 +20,11 @@
   }
 
   .nav{
-    @apply w-full flex justify-center items-center py-[30px] bg-white
+    @apply w-full flex justify-center items-center py-[30px] transition-all duration-500
+  }
+
+  .nav.show{
+    @apply bg-white py-[25px]
   }
 
   .list_items{
